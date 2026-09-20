@@ -1,0 +1,22 @@
+{
+  "name": "travelguard-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "seed": "node db/seed.js",
+    "test:engine": "node tests/engine.test.js",
+    "test:api": "node tests/api.test.js",
+    "test": "node tests/engine.test.js && node tests/api.test.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "pg": "^8.13.1",
+    "socket.io": "^4.8.1"
+  }
+}
